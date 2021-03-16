@@ -11,7 +11,7 @@ namespace GestionePianiPalestra
         {
             double tariffa3 = 79.99;
             int mesi = 12;
-            string valoreAspettato= $"tariffa3 {tariffa3 * 12}";
+            string valoreAspettato = $"tariffa3 {tariffa3 * 12}";
             string valoreRitorno = Gestioneabbonamenti.Scelta(mesi);
             Assert.AreEqual(valoreAspettato, valoreRitorno);
         }
@@ -27,9 +27,9 @@ namespace GestionePianiPalestra
         [TestMethod]
         public void test2mesi()
         {
-            double tariffa1 = 115.99;          
+            double tariffa1 = 115.99;
             int mesi = 2;
-            string valoreAspettato = $"2tariffa1 {tariffa1*2}";
+            string valoreAspettato = $"2tariffa1 {tariffa1 * 2}";
             string valoreRitorno = Gestioneabbonamenti.Scelta(mesi);
             Assert.AreEqual(valoreAspettato, valoreRitorno);
         }
